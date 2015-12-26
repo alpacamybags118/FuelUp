@@ -1,6 +1,8 @@
 ﻿body {
     padding-top: 50px;
     padding-bottom: 20px;
+    background-color: #2DAC62;
+    font-family: 'Alegreya Sans', sans-serif;
 }
 
 /* Set padding to keep content from hitting the edges */
