@@ -1,31 +1,63 @@
 ﻿@{
-    ViewBag.Title = "Home Page";
+
+    Layout = null;
 }
+<!DOCTYPE html>
 
-<div class="jumbotron">
-    <h1>ASP.NET</h1>
-    <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
-    <p><a href="http://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
-</div>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html" charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>FuelUp</title>
+        @Styles.Render("~/Content/css")
 
-<div class="row">
-    <div class="col-md-4">
-        <h2>Getting started</h2>
-        <p>
-            ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
-            enables a clean separation of concerns and gives you full control over markup
-            for enjoyable, agile development.
-        </p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Get more libraries</h2>
-        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Web Hosting</h2>
-        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
-    </div>
-</div>
+        <!-- Internet Explorer HTML5 enabling script: -->
+        <!--[if IE]>
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <style type="text/css">
+
+            .clear {
+                zoom: 1;
+                display: block;
+            }
+
+        </style>
+
+    <![endif]-->
+    </head>
+    <body>
+       <section id="page">
+           <header>
+               <h1>FuelUp</h1>
+               <h3>Eloquently track your fuel ups and fuel economy.</h3>
+
+               <nav class="clear">
+                   <ul>
+                       <li><a href="#about">What Is FuelUp?</a></li>
+                       <li><a href="#features">What Can FuelUp Do?</a></li>
+                   </ul>
+               </nav>
+           </header>
+           <div class="line"></div>
+           <article id="about">
+               <div class="articleBody clear">
+                   <h1>What is FuelUp?</h1>
+                   <div class="">
+                       FuelUp allows you to keep track of your fuel ups and fuel economy from the convience of your mobile device or computer. It has been crafted to be <b>easy</b>, <b>conveient</b>, and <b>modern</b>.
+                   </div>
+               </div>
+           </article>
+           <div class="line"></div>
+           <article id="features">
+               <h1>What Can FuelUp Do?</h1>
+               FuelUp can do a lot.
+               <ul>
+                   <li>Track fuel ups of all of your vehicles.</li>
+                   <li>View your fuel ups from any time</li>
+                   <li>Track fuel economy and use robust reporting to track changes in fuel economy over mileage, season, and more!</li>
+               </ul>
+               
+           </article>
+    </section>
+    </body>
+</html>
