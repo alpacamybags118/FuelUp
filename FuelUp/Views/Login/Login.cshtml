@@ -14,8 +14,17 @@
     @Styles.Render("~/Content/css")
 </head>
 <body>
-    <div> 
-        <h1>FuelUp</h1>
+    <div class="loginbox">
+        <h2>FuelUp Login</h2>
+            <form method="post">
+                <div class="form-group logincontrol">
+                    <input class="form-control" type="text" name="username" placeholder="Username" />
+                </div>
+                <div class="form-group logincontrol">
+                    <input class="form-control" type="password" name="password" placeholder="Password" />
+                </div>
+                <button type="submit" class="btn btn-primary loginbutton">Login</button>
+            </form>
     </div>
 </body>
 </html>
