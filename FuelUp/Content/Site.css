@@ -41,4 +41,19 @@ textarea {
 
 .logincontrol {
        margin-left:113px;
+       margin-right:113px;
+}
+
+.loginbutton {
+    width: 274px;
+    background-color: #2DAC62;
+    border: solid 2px 
+}
+
+.registercontrol {
+    margin-top:10px;
+}
+
+.registertext {
+    font-size: 14px;
 }
