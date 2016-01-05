@@ -12,26 +12,60 @@
     <title>FuelUp</title>
     <link href='https://fonts.googleapis.com/css?family=Alegreya+Sans' rel='stylesheet' type='text/css'>
     @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/jquery")
 </head>
 <body>
     <div class="loginbox">
         <h2>FuelUp Login</h2>
-            <form method="post">
+            @using (Html.BeginForm("Login","Account",FormMethod.Post,new {id= "loginform" }))
+            {
+                @Html.AntiForgeryToken()
+                @Html.ValidationSummary()
+
                 <div class="form-group logincontrol">
-                    <input class="form-control" type="text" name="username" placeholder="Username" />
+                    <label id="usernamevalidation" hidden></label>
+                    <input id="username" class="form-control" type="text" name="username" placeholder="Username" />
                 </div>
                 <div class="form-group logincontrol">
-                    <input class="form-control" type="password" name="password" placeholder="Password" />
+                    <label id="passwordvalidation" hidden></label>
+                    <input id="password" class="form-control" type="password" name="password" placeholder="Password" />
                 </div>
                 <div class="form-group logincontrol">
                     <input type="checkbox" name="rememberme" />
                     <label>Remember Me</label>
                 </div>
                 <button type="submit" class="btn btn-primary loginbutton">Login</button>
-            </form>
+            }
         <div class="logincontrol registercontrol">
             <span class="registertext">New Here? @Html.ActionLink("Sign Up \u2192", "Register")</span>
         </div>
     </div>
+
+    <script type="text/javascript">
+        $(function () {
+            $('#loginform').submit(function (event) {
+                event.preventDefault();
+                validateLoginForm();
+            });
+        });
+
+        function validateLoginForm() {
+            var username = document.getElementById("username")
+            var password = document.getElementById("password")
+            var usernamevalidationlabel = document.getElementById("usernamevalidation")
+            var valid = true
+
+            //username checks
+            if (username.innerHTML.length == 0) {
+                valid = false;
+                username.classList.add("has-error")
+                usernamevalidationlabel.textContent = "Username must be entered."
+                usernamevalidationlabel.classList.add("has-error")
+                usernamevalidationlabel.hidden = false;
+            }
+
+            return valid;
+        }
+    </script>
 </body>
 </html>
