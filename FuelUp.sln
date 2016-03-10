@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FuelUp", "FuelUp\FuelUp.csproj", "{B12C18EF-CDB6-4404-B8AA-ED0ECD7356AE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FuelUp.Web", "FuelUp\FuelUp.Web.csproj", "{B12C18EF-CDB6-4404-B8AA-ED0ECD7356AE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FuelUp.Business", "FuelUp.Business\FuelUp.Business.csproj", "{B4FA7D36-AE2A-4EF3-9635-D0F3AC95A70A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FuelUp.DataAccess", "FuelUp.DataAccess\FuelUp.DataAccess.csproj", "{63B4BB37-B900-43A6-B617-06A3B51F410C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{B12C18EF-CDB6-4404-B8AA-ED0ECD7356AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B12C18EF-CDB6-4404-B8AA-ED0ECD7356AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B12C18EF-CDB6-4404-B8AA-ED0ECD7356AE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B4FA7D36-AE2A-4EF3-9635-D0F3AC95A70A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B4FA7D36-AE2A-4EF3-9635-D0F3AC95A70A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B4FA7D36-AE2A-4EF3-9635-D0F3AC95A70A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B4FA7D36-AE2A-4EF3-9635-D0F3AC95A70A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{63B4BB37-B900-43A6-B617-06A3B51F410C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63B4BB37-B900-43A6-B617-06A3B51F410C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63B4BB37-B900-43A6-B617-06A3B51F410C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63B4BB37-B900-43A6-B617-06A3B51F410C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
