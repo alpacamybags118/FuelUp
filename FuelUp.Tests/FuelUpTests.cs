@@ -1,18 +1,18 @@
 ﻿using System;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+using NUnit.Framework;
 
 namespace FuelUp.Tests
 {
-    [TestClass]
+    [TestFixture]
     public class FuelUpTests
     {
-        [TestMethod]
+        [TestCase]
         public void ThisIsARealTest()
         {
             Assert.IsTrue(true);
         }
 
-        [TestMethod]
+        [TestCase]
         public void ISwearThisOneIsRealToo()
         {
             int sum;
